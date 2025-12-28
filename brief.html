@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — Brief</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" >Home</a>
+        <a href="insights.html" >Insights</a>
+        <a href="report.html" >Report</a>
+        <a href="brief.html" aria-current="page">Briefs</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="article-wrap">
+    <div class="container article-grid">
+      <aside class="rail">
+        <div class="card pad">
+          <div class="kicker">Brief</div>
+          <h2 style="margin:6px 0 8px;">Scannable by design</h2>
+          <p style="margin:0; color:var(--muted); font-size:var(--step--1);">
+            Briefs are short, structured pieces: quick premise, examples, and a “use this next” ending.
+          </p>
+          <hr />
+          <div class="stack">
+            <div class="pill"><strong data-readingtime>—</strong></div>
+            <div class="pill"><strong>Pattern</strong> clear headers</div>
+            <div class="pill"><strong>Option</strong> add TOC if needed</div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="article-main">
+        <article class="card pad article" data-article>
+          <div class="kicker">Brief</div>
+          <h1>A lightweight cadence for insight reviews</h1>
+          <p class="subtitle">
+            A small weekly practice that keeps research signal high — without turning meetings into theatre.
+          </p>
+
+          <div class="byline">
+            <span>Field Notes</span><span class="dot"></span>
+            <span><time datetime="2025-10-27">Oct 27, 2025</time></span><span class="dot"></span>
+            <span>Topic: <a href="insights.html">research ops</a></span>
+          </div>
+
+          <hr />
+
+          <div class="prose">
+            <h2>Premise</h2>
+            <p>
+              Most teams don’t have a research problem — they have an <em>attention allocation</em> problem.
+              Insights exist, but they don’t land in the routines where decisions are made.
+            </p>
+
+            <h2>Cadence</h2>
+            <ul>
+              <li><strong>15 minutes weekly</strong>: one insight, one decision implication.</li>
+              <li><strong>Rotate ownership</strong>: researchers, PMs, designers.</li>
+              <li><strong>Capture in one place</strong>: a living “insights index”.</li>
+            </ul>
+
+            <h2 id="interview-notes">The smallest useful interview note</h2>
+            <p>
+              Keep notes oriented around claims, not transcripts:
+              <code>Observation → Interpretation → Implication</code>.
+            </p>
+
+            <div class="pull">
+              <p class="quote">If the note doesn’t change what you’d do next, it’s probably not a note — it’s a record.</p>
+              <div class="cite">— Internal research guide</div>
+            </div>
+
+            <h2>Use this next</h2>
+            <p>
+              Try this for two weeks: require each “insight review” to end with one explicit decision question.
+              If you can’t find one, it’s a signal the insight is not yet actionable — or the team’s strategy is unclear.
+            </p>
+          </div>
+        </article>
+
+        <div class="card pad" style="margin-top: 16px;">
+          <div class="kicker">Related</div>
+          <div class="grid" style="margin-top:10px;">
+            <div class="card item" style="grid-column: span 6;">
+              <div class="tag">Strategy</div>
+              <h3><a href="report.html#decision-patterns">Decision patterns that hide risk</a></h3>
+              <p>How teams “ship uncertainty” — and what to do about it.</p>
+            </div>
+            <div class="card item" style="grid-column: span 6;">
+              <div class="tag">Research</div>
+              <h3><a href="report.html#methods">When “qual” needs structure</a></h3>
+              <p>A rubric for claims, evidence, and confidence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
