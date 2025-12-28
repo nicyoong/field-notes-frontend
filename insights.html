@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — Insights</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" >Home</a>
+        <a href="insights.html" aria-current="page">Insights</a>
+        <a href="report.html" >Report</a>
+        <a href="brief.html" >Briefs</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero" style="padding-bottom:10px;">
+    <div class="container">
+      <h1 style="font-size:var(--step-3); margin-bottom:8px;">Insights</h1>
+      <p style="max-width:80ch;">
+        Filter by topic, sort by length/depth, and treat browsing like sensemaking.
+        Replace these entries with your own WordPress export or headless CMS feed later.
+      </p>
+      <div class="meta" style="margin-top:14px;">
+        <span class="pill"><strong>Status</strong> frontend-only</span>
+        <span class="pill"><strong>Patterns</strong> taxonomy + list controls</span>
+        <span class="pill"><strong>Count</strong> <span data-insights-count>—</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="container">
+      <div class="controls">
+        <label class="control" aria-label="Search insights">
+          <span style="color:var(--faint);">Search</span>
+          <input data-insights-search type="search" placeholder="keywords, concepts…" />
+        </label>
+
+        <label class="control" aria-label="Sort insights">
+          <span style="color:var(--faint);">Sort</span>
+          <select data-insights-sort>
+            <option value="new">Newest</option>
+            <option value="old">Oldest</option>
+            <option value="length">Length</option>
+            <option value="depth">Depth</option>
+          </select>
+        </label>
+
+        <span class="control" aria-label="Legend" title="Length is word-count bucket; depth is a subjective score for hierarchy/citations.">
+          <span style="color:var(--faint);">Legend</span>
+          <span>Length · Depth</span>
+        </span>
+      </div>
+
+      <div class="pills" role="group" aria-label="Topic filters">
+        <button type="button" data-topic-pill data-topic="all" aria-pressed="true">All</button>
+        <button type="button" data-topic-pill data-topic="research" aria-pressed="false">Research</button>
+        <button type="button" data-topic-pill data-topic="strategy" aria-pressed="false">Strategy</button>
+        <button type="button" data-topic-pill data-topic="product" aria-pressed="false">Product</button>
+        <button type="button" data-topic-pill data-topic="ops" aria-pressed="false">Research Ops</button>
+      </div>
+
+      <div class="grid" style="margin-top: 16px;" data-insights-list>
+        <!-- Data model: data-topic, data-date (YYYY-MM-DD), data-length (word bucket), data-depth (1–10) -->
+        <article class="card item" data-insight data-topic="strategy" data-date="2025-11-05" data-length="1800" data-depth="8" style="grid-column: span 6;">
+          <div class="tag">Strategy</div>
+          <h3><a href="report.html">The Hidden Costs of Context Switching in Product Orgs</a></h3>
+          <p>A long report template: TOC, scrollspy, citations, charts, print-friendly layout.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Report</span><span class="dot"></span>
+              <span>Length 1.8k</span><span class="dot"></span>
+              <span>Depth 8/10</span>
+            </div>
+            <a href="report.html" class="pill" style="color:var(--accent)">Read →</a>
+          </div>
+        </article>
+
+        <article class="card item" data-insight data-topic="ops" data-date="2025-10-27" data-length="650" data-depth="5" style="grid-column: span 6;">
+          <div class="tag">Research Ops</div>
+          <h3><a href="brief.html">A lightweight cadence for insight reviews</a></h3>
+          <p>Keep discovery signal high without turning meetings into theatre.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Brief</span><span class="dot"></span>
+              <span>Length 650</span><span class="dot"></span>
+              <span>Depth 5/10</span>
+            </div>
+            <a href="brief.html" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" data-insight data-topic="research" data-date="2025-09-18" data-length="1200" data-depth="7" style="grid-column: span 4;">
+          <div class="tag">Research</div>
+          <h3><a href="report.html#methods">When “qual” needs structure</a></h3>
+          <p>A simple rubric for claims, evidence, and confidence.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Essay</span><span class="dot"></span>
+              <span>Length 1.2k</span><span class="dot"></span>
+              <span>Depth 7/10</span>
+            </div>
+            <a href="report.html#methods" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" data-insight data-topic="product" data-date="2025-08-03" data-length="900" data-depth="6" style="grid-column: span 4;">
+          <div class="tag">Product</div>
+          <h3><a href="report.html#instrumentation">Anatomy of good instrumentation</a></h3>
+          <p>Move from event spam to meaningful measures: intent, context, sampling.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Note</span><span class="dot"></span>
+              <span>Length 900</span><span class="dot"></span>
+              <span>Depth 6/10</span>
+            </div>
+            <a href="report.html#instrumentation" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" data-insight data-topic="strategy" data-date="2025-06-21" data-length="760" data-depth="6" style="grid-column: span 4;">
+          <div class="tag">Strategy</div>
+          <h3><a href="report.html#decision-patterns">Decision patterns that hide risk</a></h3>
+          <p>Three ways teams “ship uncertainty” — and how to surface it early.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Observation</span><span class="dot"></span>
+              <span>Length 760</span><span class="dot"></span>
+              <span>Depth 6/10</span>
+            </div>
+            <a href="report.html#decision-patterns" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" data-insight data-topic="research" data-date="2025-05-14" data-length="540" data-depth="4" style="grid-column: span 4;">
+          <div class="tag">Research</div>
+          <h3><a href="brief.html#interview-notes">The smallest useful interview note</a></h3>
+          <p>A template that keeps the team aligned on claims — not transcripts.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Brief</span><span class="dot"></span>
+              <span>Length 540</span><span class="dot"></span>
+              <span>Depth 4/10</span>
+            </div>
+            <a href="brief.html#interview-notes" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
