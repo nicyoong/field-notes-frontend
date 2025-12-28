@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — Report Template</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" >Home</a>
+        <a href="insights.html" >Insights</a>
+        <a href="report.html" aria-current="page">Report</a>
+        <a href="brief.html" >Briefs</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="article-wrap">
+    <div class="container article-grid">
+      <aside class="rail">
+        <div class="card toc">
+          <h2>Contents</h2>
+          <div data-toc>
+            <!-- JS injects TOC here -->
+          </div>
+          <div style="margin-top:12px; color:var(--faint); font-size:var(--step--1);">
+            Tip: Use <span class="kbd">Alt</span>+<span class="kbd">J</span> / <span class="kbd">K</span> to jump sections.
+          </div>
+        </div>
+
+        <div class="card pad" style="margin-top:14px;">
+          <div class="kicker">Reading</div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:8px;">
+            <span class="pill"><strong data-readingtime>—</strong></span>
+            <span class="pill"><strong>Print</strong> Ctrl/⌘ + P</span>
+            <span class="pill"><strong>Cite</strong> footnotes</span>
+          </div>
+          <hr />
+          <div style="color:var(--muted); font-size:var(--step--1);">
+            This template is built to mirror a WordPress “single post” page — with added research ergonomics.
+          </div>
+        </div>
+      </aside>
+
+      <div class="article-main">
+        <article class="card pad article" data-article>
+          <div class="kicker">Report</div>
+          <h1>The Hidden Costs of Context Switching in Product Orgs</h1>
+          <p class="subtitle">
+            A research-style writeup on why “more parallel work” often produces less total progress — and how to
+            design constraints that increase throughput without burning trust.
+          </p>
+
+          <div class="byline">
+            <span>Field Research Team</span><span class="dot"></span>
+            <span>Updated <time datetime="2025-10-12">Oct 12, 2025</time></span><span class="dot"></span>
+            <span>Topics: <a href="insights.html">strategy</a>, <a href="insights.html">research ops</a></span>
+          </div>
+
+          <hr />
+
+          <div class="prose">
+            <p>
+              Product organizations often treat “context switching” as an individual productivity issue. But in practice,
+              it behaves like a <em>system-level tax</em>: it changes coordination, incentives, and decision quality.
+              In our interviews, teams reported losing “half-days” to re-loading context after repeated priority pivots
+              <a class="fn-ref" href="#fn1" id="fnref1">1</a>.
+            </p>
+
+            <div class="pull">
+              <p class="quote">“We weren’t slow because we lacked talent — we were slow because we kept changing what ‘done’ meant.”</p>
+              <div class="cite">— Director of Product, B2B platform</div>
+            </div>
+
+            <h2>Executive summary</h2>
+            <p>
+              We see three compounding mechanisms: (1) attention fragmentation, (2) coordination inflation, and
+              (3) risk masking. Teams can mitigate them by designing a small set of shared constraints:
+              explicit decision states, protected focus windows, and evidence standards for changing course.
+            </p>
+
+            <h2 id="methods">Method &amp; scope</h2>
+            <p>
+              This report is based on a qualitative synthesis of internal artifacts (planning docs, retrospectives)
+              and 14 structured interviews across product, design, and engineering. Claims are tagged by confidence:
+              <code>High</code>, <code>Medium</code>, <code>Exploratory</code>.
+            </p>
+
+            <div class="citation">
+              <div class="label">Evidence standard</div>
+              <div class="src">
+                A claim should be traceable to at least one of: repeated interview signal, an artifact, or a measurable proxy.
+                Add citations to footnotes if you publish externally.
+              </div>
+            </div>
+
+            <h2 id="mechanisms">Mechanisms</h2>
+            <h3>1) Attention fragmentation</h3>
+            <p>
+              Switching tasks imposes setup costs: reopening tools, rebuilding mental models, and re-locating “why”
+              behind a decision. At the team level, these costs compound because handoffs require re-explaining context.
+            </p>
+
+            <h3>2) Coordination inflation</h3>
+            <p>
+              When priorities shift frequently, coordination artifacts multiply: status meetings, re-plans, and escalations.
+              This is work — but it produces no customer-facing output. It also changes culture: teams learn that plans
+              are temporary and stop investing in them.
+            </p>
+
+            <h3 id="decision-patterns">3) Risk masking via decisions</h3>
+            <p>
+              Some organizations use priority changes as a substitute for confronting risk. “Pivoting” can be adaptive,
+              but when it becomes routine, it hides uncertainty instead of resolving it.
+            </p>
+
+            <blockquote>
+              A useful question: “What would we need to believe for this change to be rational?”
+              If you can’t answer, you’re likely shipping uncertainty.
+            </blockquote>
+
+            <h2 id="instrumentation">A minimal instrumentation model</h2>
+            <p>
+              You don’t need perfect analytics. You need a <em>measurable proxy</em> that is stable enough to learn from.
+              Below is a static SVG chart placeholder you can swap for a real chart later.
+            </p>
+
+            <div class="card pad" style="margin: 16px 0;">
+              <div class="kicker">Chart</div>
+              <h3 style="margin:6px 0 10px;">Throughput vs. context switches (illustrative)</h3>
+
+              <!-- Static SVG chart (swap in real chart later) -->
+              <svg viewBox="0 0 720 260" role="img" aria-label="Illustrative chart of throughput vs context switches"
+                   style="width:100%; height:auto; border:1px solid var(--border); border-radius:14px; background:color-mix(in srgb, var(--soft) 70%, transparent);">
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="currentColor" stop-opacity=".14"/>
+                    <stop offset="100%" stop-color="currentColor" stop-opacity=".06"/>
+                  </linearGradient>
+                </defs>
+                <g fill="none" stroke="currentColor" stroke-opacity=".22" stroke-width="1">
+                  <path d="M60 30V220M60 220H690" />
+                  <path d="M60 190H690M60 160H690M60 130H690M60 100H690M60 70H690" />
+                </g>
+                <g fill="currentColor" fill-opacity=".85" font-family="var(--font-sans)" font-size="12">
+                  <text x="60" y="240">Low switching</text>
+                  <text x="610" y="240">High switching</text>
+                  <text x="18" y="40" transform="rotate(-90 18 40)">Throughput</text>
+                </g>
+                <path d="M60 70 C 180 80, 240 120, 340 140 C 430 160, 520 190, 690 210"
+                      stroke="currentColor" stroke-opacity=".62" stroke-width="3" fill="url(#g)"/>
+                <g fill="currentColor" fill-opacity=".85">
+                  <circle cx="60" cy="70" r="4"/>
+                  <circle cx="240" cy="120" r="4"/>
+                  <circle cx="520" cy="190" r="4"/>
+                  <circle cx="690" cy="210" r="4"/>
+                </g>
+              </svg>
+
+              <p style="margin:10px 0 0; color:var(--muted); font-size:var(--step--1);">
+                This is intentionally “quiet”: in research writing, charts should support the claim, not compete with it.
+              </p>
+            </div>
+
+            <h2 id="interventions">Interventions &amp; constraints</h2>
+            <p>
+              Constraints are not bureaucracy; they’re a shared interface. Three that consistently help:
+            </p>
+            <ul>
+              <li><strong>Decision states</strong>: draft → review → commit. Reduce churn by naming the stage.</li>
+              <li><strong>Protected focus windows</strong>: treat them like meetings with customers.</li>
+              <li><strong>Change criteria</strong>: require evidence for re-prioritization (even if lightweight).</li>
+            </ul>
+
+            <h2 id="appendix">Appendix: citations &amp; footnotes</h2>
+            <p>
+              Footnotes are designed to be expandable inline (click the number). They also render as a classic list at the bottom for print.
+              <a class="fn-ref" href="#fn2" id="fnref2">2</a>
+            </p>
+
+            <section class="footnotes" data-no-toc>
+              <h2>Footnotes</h2>
+              <ol>
+                <li id="fn1">
+                  Interview synthesis: “Context reload” described by 9/14 participants; most often after roadmap reshuffles and leadership escalations.
+                  <a class="fn-back" href="#fnref1">↩</a>
+                </li>
+                <li id="fn2">
+                  In print mode, the sticky rail and progress bar are hidden and URLs are appended after links.
+                  <a class="fn-back" href="#fnref2">↩</a>
+                </li>
+              </ol>
+            </section>
+          </div>
+        </article>
+
+        <div class="card cta" style="margin-top: 16px;">
+          <div>
+            <h3>Continue the thread</h3>
+            <p>UI only. Add a “related reading” block or a newsletter prompt after long reports.</p>
+          </div>
+          <form onsubmit="return false" aria-label="Follow updates (UI only)">
+            <input type="email" placeholder="you@company.com" aria-label="Email address" />
+            <button type="submit">Get updates</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
