@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — About</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" >Home</a>
+        <a href="insights.html" >Insights</a>
+        <a href="report.html" >Report</a>
+        <a href="brief.html" >Briefs</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero" style="padding-bottom:12px;">
+    <div class="container">
+      <h1 style="font-size:var(--step-3); margin-bottom:8px;">About</h1>
+      <p style="max-width:80ch;">
+        Field Notes is a portfolio-ready “research team publishing externally” site: dense layouts,
+        multi-level hierarchy, and readability-first interaction design.
+      </p>
+      <div class="meta" style="margin-top:14px;">
+        <span class="pill"><strong>Mission</strong> make thinking legible</span>
+        <span class="pill"><strong>Method</strong> claims + evidence</span>
+        <span class="pill"><strong>Output</strong> essays, briefs, reports</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div class="card pad" style="grid-column: span 7;">
+        <h2>Mission</h2>
+        <p style="color:var(--muted); margin-top:0;">
+          Publish research as an artifact of organizational clarity. Writing forces decisions into explicit
+          claims, connects them to evidence, and makes tradeoffs discussable.
+        </p>
+        <div class="citation">
+          <div class="label">Working principle</div>
+          <div class="src">
+            “If it can’t be explained, it can’t be evaluated.” Use this site to show your ability to build
+            navigation systems that support thinking, not just reading.
+          </div>
+        </div>
+      </div>
+
+      <div class="card pad" style="grid-column: span 5;">
+        <h2>Methodology</h2>
+        <p style="color:var(--muted); margin-top:0;">
+          Each piece should disclose:
+        </p>
+        <ul style="margin:0; padding-left:18px;">
+          <li>Scope and data sources</li>
+          <li>Confidence level on key claims</li>
+          <li>Open questions + next research steps</li>
+        </ul>
+        <hr />
+        <p style="margin:0; color:var(--muted); font-size:var(--step--1);">
+          Tip: keep a consistent taxonomy (topics) so Insights filtering stays meaningful.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card cta">
+        <div>
+          <h3>Contact / collaboration</h3>
+          <p>Use this for speaking, advisory work, research partnerships, or consulting inquiries.</p>
+        </div>
+        <form onsubmit="return false" aria-label="Contact CTA (UI only)">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <button type="submit">Request a conversation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
