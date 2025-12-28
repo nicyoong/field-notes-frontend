@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — Contact</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" >Home</a>
+        <a href="insights.html" >Insights</a>
+        <a href="report.html" >Report</a>
+        <a href="brief.html" >Briefs</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero" style="padding-bottom:12px;">
+    <div class="container">
+      <h1 style="font-size:var(--step-3); margin-bottom:8px;">Contact</h1>
+      <p style="max-width:80ch;">
+        UI only. Replace this form with your preferred backend (WordPress, Webflow, Netlify Forms, etc.).
+        The structure emphasizes clarity: why you’re writing, what you need, and relevant context.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div class="card pad" style="grid-column: span 7;">
+        <h2>Send a note</h2>
+        <form onsubmit="return false" class="stack" aria-label="Contact form (UI only)">
+          <label class="stack" style="gap:6px;">
+            <span style="font-size:var(--step--1); color:var(--muted);">Name</span>
+            <input type="text" placeholder="Your name" style="border:1px solid var(--border); border-radius:12px; padding:10px 12px; background:var(--panel); font:inherit;" />
+          </label>
+
+          <label class="stack" style="gap:6px;">
+            <span style="font-size:var(--step--1); color:var(--muted);">Email</span>
+            <input type="email" placeholder="you@company.com" style="border:1px solid var(--border); border-radius:12px; padding:10px 12px; background:var(--panel); font:inherit;" />
+          </label>
+
+          <label class="stack" style="gap:6px;">
+            <span style="font-size:var(--step--1); color:var(--muted);">Topic</span>
+            <select style="border:1px solid var(--border); border-radius:12px; padding:10px 12px; background:var(--panel); font:inherit;">
+              <option>Speaking / workshop</option>
+              <option>Research partnership</option>
+              <option>Product strategy advisory</option>
+              <option>General inquiry</option>
+            </select>
+          </label>
+
+          <label class="stack" style="gap:6px;">
+            <span style="font-size:var(--step--1); color:var(--muted);">Message</span>
+            <textarea rows="6" placeholder="What are you trying to decide? What context should we know?"
+              style="border:1px solid var(--border); border-radius:12px; padding:10px 12px; background:var(--panel); font:inherit; resize:vertical;"></textarea>
+          </label>
+
+          <div class="row" style="justify-content: space-between; align-items:center; flex-wrap:wrap;">
+            <span class="pill"><strong>Note</strong> this form is UI-only</span>
+            <button type="submit" style="border:1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+              background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 92%, #fff), var(--accent));
+              color:#fff; border-radius:999px; padding:10px 14px; cursor:pointer; font:inherit;">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card pad" style="grid-column: span 5;">
+        <h2>What helps</h2>
+        <p style="margin-top:0; color:var(--muted);">Include these to get a faster, higher-quality reply:</p>
+        <ul style="margin:0; padding-left:18px;">
+          <li>Decision you’re trying to make</li>
+          <li>Constraints (timeline, budget, stakeholders)</li>
+          <li>What you’ve already tried</li>
+          <li>Links to relevant artifacts</li>
+        </ul>
+        <hr />
+        <p style="margin:0; color:var(--muted); font-size:var(--step--1);">
+          If you’re using this as a portfolio, replace this sidebar with testimonials or a “services” snapshot.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
