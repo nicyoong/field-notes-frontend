@@ -3,12 +3,12 @@
 A calm, analytical, WordPress-style research / insights microsite.
 
 ## Pages
-- `index.html` — Home (editorial intro, featured report, recent notes, newsletter CTA UI)
-- `insights.html` — Insights listing w/ filter + sort + search (JS)
-- `report.html` — Long report template w/ JS-generated TOC, scrollspy, footnotes popover, reading progress, print styles
-- `brief.html` — Short, scannable brief template
-- `about.html` — Mission + methodology
-- `contact.html` — Contact form (UI only)
+- `index.html`, Home (editorial intro, featured report, recent notes, newsletter CTA UI)
+- `insights.html`, Insights listing w/ filter + sort + search (JS)
+- `report.html`, Long report template w/ JS-generated TOC, scrollspy, footnotes popover, reading progress, print styles
+- `brief.html`, Short, scannable brief template
+- `about.html`, Mission + methodology
+- `contact.html`, Contact form (UI only)
 
 ## Where to add your content
 - Replace the `<article data-article>` blocks on `report.html` / `brief.html`.

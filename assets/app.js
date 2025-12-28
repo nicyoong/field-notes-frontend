@@ -1,4 +1,4 @@
-/* Field Notes — app.js
+/* Field Notes, app.js
    - JS-generated TOC
    - Scroll-linked section highlighting (scrollspy)
    - Reading time + progress bar
