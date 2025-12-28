@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Field Notes — Home</title>
+  <meta name="description" content="Field Notes — a research / insights microsite (frontend demo)." />
+  <link rel="preconnect" href="." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><i></i></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Field Notes home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <strong>Field Notes</strong>
+          <span>Research / insights microsite</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="insights.html" >Insights</a>
+        <a href="report.html" >Report</a>
+        <a href="brief.html" >Briefs</a>
+        <a href="about.html" >About</a>
+        <a href="contact.html" >Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <div class="meta">
+        <span class="pill"><strong>Editorial</strong> calm, analytical, serious</span>
+        <span class="pill"><strong>Audience</strong> product leaders &amp; researchers</span>
+        <span class="pill"><strong>Shortcut</strong> <span class="kbd">Alt</span> + <span class="kbd">J</span>/<span class="kbd">K</span> in reports</span>
+      </div>
+
+      <h1>Field Notes: research, strategy, and product insights.</h1>
+      <p>
+        A content-heavy microsite for publishing the kind of work internal research teams do — externally.
+        Essays, briefs, reports, and highlighted insights — optimized for reading, citing, and printing.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid">
+      <div class="card pad" style="grid-column: span 7;">
+        <div class="kicker">Featured report</div>
+        <h2 style="margin-top:6px;">The Hidden Costs of Context Switching in Product Orgs</h2>
+        <p style="margin:0 0 14px; color:var(--muted); max-width:70ch;">
+          A structured report template with JS-generated table of contents, scroll-linked section highlighting,
+          inline footnotes, and print-friendly formatting.
+        </p>
+        <div class="row" style="justify-content:space-between; align-items:center;">
+          <div class="meta" style="display:flex; gap:10px; flex-wrap:wrap; color:var(--faint); font-size:var(--step--1);">
+            <span>Report · 14–18 min</span><span class="dot"></span>
+            <span>Team: Field Research</span><span class="dot"></span>
+            <span>Updated: 2025-10-12</span>
+          </div>
+          <a class="pill" href="report.html" style="color:var(--accent); border-color: color-mix(in srgb, var(--accent) 30%, var(--border));">
+            Read report →
+          </a>
+        </div>
+      </div>
+
+      <div class="card pad" style="grid-column: span 5;">
+        <div class="kicker">Editorial intro</div>
+        <h2 style="margin-top:6px;">Publishing as a research practice</h2>
+        <p style="margin:0; color:var(--muted);">
+          Field Notes is built for “navigation systems for thinking, not browsing”:
+          nested hierarchy, citations, and clear surfaces for long-form work.
+        </p>
+        <hr />
+        <div class="stack">
+          <div class="pill"><strong>Content types</strong> essays · briefs · long reports · highlighted insights</div>
+          <div class="pill"><strong>UX</strong> TOC · progress · pull quotes · print mode</div>
+          <div class="pill"><strong>Interaction</strong> sticky navigation · section jumps · footnotes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Recent notes</h2>
+          <p>Short research observations designed to be scanned, quoted, and cross-linked.</p>
+        </div>
+        <a href="insights.html">View all →</a>
+      </div>
+
+      <div class="grid">
+        <article class="card item" style="grid-column: span 4;">
+          <div class="tag">Research Ops</div>
+          <h3><a href="brief.html">A lightweight cadence for insight reviews</a></h3>
+          <p>How to keep discovery signal high without turning meetings into theatre.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Brief</span><span class="dot"></span><span>~4 min</span>
+            </div>
+            <a href="brief.html" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" style="grid-column: span 4;">
+          <div class="tag">Strategy</div>
+          <h3><a href="report.html#decision-patterns">Decision patterns that hide risk</a></h3>
+          <p>Three ways teams “ship uncertainty” — and how to surface it early.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Insight</span><span class="dot"></span><span>~6 min</span>
+            </div>
+            <a href="report.html#decision-patterns" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+
+        <article class="card item" style="grid-column: span 4;">
+          <div class="tag">Product</div>
+          <h3><a href="insights.html">Anatomy of “good” instrumentation</a></h3>
+          <p>Move from event spam to meaningful measures: intent, context, and sampling.</p>
+          <div class="row">
+            <div class="meta">
+              <span>Essay</span><span class="dot"></span><span>~9 min</span>
+            </div>
+            <a href="insights.html" class="pill" style="color:var(--accent)">Open →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card cta">
+        <div>
+          <h3>Newsletter-style CTA</h3>
+          <p>UI only. Swap in your provider later. Use this space to make “following the work” feel obvious.</p>
+        </div>
+        <form onsubmit="return false" aria-label="Newsletter sign-up (UI only)">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong style="color:var(--ink)">Field Notes</strong><br />
+        <small>Dense thinking, clearly published. Frontend-only template.</small>
+      </div>
+      <div class="footer-links">
+        <a href="insights.html">Browse insights</a>
+        <a href="report.html">Featured report</a>
+        <a href="about.html">Mission</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
